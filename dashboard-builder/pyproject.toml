@@ -1,0 +1,22 @@
+[project]
+name = "dashboard-builder"
+version = "0.1.0"
+description = "Einfacher Dashboard-Builder im Tableau-Stil (Streamlit + Plotly)"
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit>=1.38",
+    "plotly>=5.22",
+    "pandas>=2.2",
+    "openpyxl>=3.1",
+]
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
